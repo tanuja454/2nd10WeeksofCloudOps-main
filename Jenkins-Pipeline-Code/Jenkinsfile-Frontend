@@ -33,13 +33,14 @@ pipeline {
                 }
             }
         }
-      // stage('Quality Check') {
-           // steps {
-              //  script {
-                  //  waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token' //
-              //  }
-          //  }
-      //  }
+      stage('Quality Check') {
+           steps {
+              script {
+                     sh 'echo hello'
+                  //  waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token' 
+               }
+           }
+       }
         stage('Trivy File Scan') {
             steps {
                 dir('client') {
