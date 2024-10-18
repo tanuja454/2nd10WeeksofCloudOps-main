@@ -36,8 +36,10 @@ pipeline {
       stage('Quality Check') {
            steps {
               script {
-                     sh 'echo hello'
-                  //  waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token' 
+                     
+                  //  waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'  
+                   sh 'echo hello'
+                   
                }
            }
        }
