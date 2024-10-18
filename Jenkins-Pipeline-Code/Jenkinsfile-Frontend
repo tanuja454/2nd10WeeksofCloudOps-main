@@ -33,16 +33,15 @@ pipeline {
                 }
             }
         }
-      stage('Quality Check') {
-           steps {
-              script {
+    //  stage('Quality Check') {
+         //  steps {
+            //  script {
                      
                   //  waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'  
-                   sh 'echo hello'
-                   
-               }
-           }
-       }
+             // }
+          //}
+      //}
+        sh 'echo hello'
         stage('Trivy File Scan') {
             steps {
                 dir('client') {
