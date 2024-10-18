@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "nareshawsdevv"
-    key    = "ec2/terraform.tfstate"
+    bucket = "mltnla"
+    key    = "mykey/terraform.tfstate"
     region = "us-east-1"
   }
 
