@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "kotakkkkk"
-    key    = "aws/terraform.tfstate"
+    key    = "ammu/terraform.tfstate"
     region = "us-west-1"
   }
 
