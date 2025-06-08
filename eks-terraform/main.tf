@@ -169,7 +169,7 @@ data "aws_security_group" "selected" {
     instance_types  = ["t2.small"]
 
     remote_access {
-      ec2_ssh_key = "unitedstates"
+      ec2_ssh_key = "buildkey"
       source_security_group_ids = [data.aws_security_group.selected.id]
     }
 
